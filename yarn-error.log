@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js run deploy
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/longtran/nuxt-fund/nuxt-funcdamentals/package.json: Unexpected token } in JSON at position 359
+  SyntaxError: /Users/longtran/nuxt-fund/nuxt-fundametals/package.json: Unexpected token } in JSON at position 294
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -34,7 +34,6 @@ npm manifest:
       "start": "nuxt start",
       "generate": "nuxt generate",
       "heroku-postbuild": "npm run build",
-      "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     },
     "dependencies": {
       "nuxt": "^2.0.0",
